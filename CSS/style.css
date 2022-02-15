@@ -1,1 +1,316 @@
+/* Basic */
+.heading h1{
+    text-transform: uppercase;
+    letter-spacing: 1.8;
+    margin-bottom: 20px;
+}
+.heading p{
+    color:#777;
+}
 
+html{
+    scroll-behavior: smooth;
+}
+/* Basic */
+
+/* navbar */
+.navbar{
+    background-color:black;
+    padding:0px;
+    margin:0;
+    position:relative;
+    position: sticky;
+    top: 0;
+    height:50px;
+    z-index: 1;
+
+}
+.navbar .nav-link{
+    margin:0px 15px;
+    color:white;
+    text-transform: uppercase;
+    font-size:16px;
+}
+.navbar .nav-link:hover{
+    background-color:rgb(198, 197, 197);
+    color:black;
+}
+
+.navbar .fa-music{
+    font-size:25px;
+    color:white;
+    padding:10px;
+}
+
+.navbar .fa-magnifying-glass{
+    color:white;
+    position:absolute;
+    right:10px;
+}
+.navbar .fa-magnifying-glass:hover,
+.navbar .fa-music:hover 
+{
+    cursor:pointer;
+}
+
+.navbar .form-control{
+    position: absolute;
+    right:35px;
+    display: none;
+}
+/* navbar */
+
+/* ----------------------------------------------------------------------- */
+
+/* Landing */
+.carousel-caption{
+    margin-bottom:20px;
+}
+/* Landing */
+
+
+/* ourTeam */
+.our-team {
+    text-align: center;
+    padding:100px;
+}
+
+.our-team h1{
+    letter-spacing:2px;
+    text-transform:uppercase;
+}
+.our-team .special{
+    color:#777;
+}
+.our-team .second-p{
+    padding:20px 100px;
+    text-align: left;
+}
+
+.our-team .cards{
+    display:flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top:50px;
+}
+.our-team .cards .card{
+    box-shadow:1.2px 2px #777;
+    transition: ease-in-out 0.3s;
+    color:rgb(142, 140, 140);
+}
+.our-team .cards .card img{
+    opacity: 60%;
+    transition:ease-in-out 0.3s;
+}
+.our-team .cards .card img:hover{
+    opacity: 100%;
+}
+.our-team .cards .card h3{
+    font-size:22px;
+
+}
+
+.our-team .cards .card:hover{
+    transform:scale(1.1,1.1);
+    box-shadow:4px 4px rgb(176, 176, 176);
+    cursor: pointer;
+    color:black;
+}
+/* ourTeam */
+
+/* ----------------------------------------------------------------------- */
+
+/* tourDate */
+.tour-date{
+    background-color: black;
+    padding:90px 90pxx 0px 90px;
+}
+
+.tour-date .heading{
+    text-align: center;
+    /* margin:10px 0px; */
+    padding:50px 0px;
+}
+.tour-date .heading h1{
+    color:white;
+}
+
+hr{
+    margin:0;
+}
+.tour-date .date .date1{
+    display: flex;
+    padding:10px;
+    position: relative;
+}
+
+.tour-date .date .date1 .badge{
+    margin-left:10px;
+    font-size:15px;
+}
+.tour-date .date .date1 .badge i:hover{
+    cursor: pointer;
+}
+
+.tour-date .date .date1 .special{
+    position: absolute;
+    right:20px;
+    border:1px solid black;
+    background-color: black;
+    color:white;
+    font-weight:bold;
+    width:25px;
+    height:25px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.tour-date .cards{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    margin-top:50px;
+    padding-bottom:50px;
+}
+.tour-date .cards .card{
+    height:100%;
+}
+.tour-date .cards .card .text{
+    padding:20px;
+}
+
+
+.tour-date .cards .card .text .date{
+    color:#777;
+}
+
+.tour-date .cards .card .text button{
+    background-color: black;
+    color:white;
+    padding:10px 20px;
+    transition: ease-in-out 0.1s;
+    margin-top:15px;
+}
+
+.tour-date .cards .card .text button:hover{
+    color:black;
+    background-color: rgb(164, 164, 164);
+}
+
+.tour-date .cards .card .overlay-div{
+    position:relative;
+
+
+}
+.tour-date .cards .card .overlay-div img{
+    width:100%;
+}
+.tour-date .cards .card .overlay{
+    position: absolute; /* Sit on top of the page content */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 1; /* Specify a stack order in case you're using a different */
+
+}
+
+.tour-date .cards .card .overlay-div:hover .overlay{
+    display: none;
+    cursor:pointer;
+    transition: ease-in-out 0.3s;
+}
+/* tourDate */
+
+/* ----------------------------------------------------------------------- */
+
+/* Contact */
+.contact-me{
+
+    padding:100px;
+}
+.contact-me .heading{
+    text-align: center;
+    color:black;
+}
+
+.contact{
+    display:flex;
+    justify-content: space-evenly;
+    margin-top:100px;
+}
+.contact .information .info {
+    font-weight: bold;
+    font-size:20px;
+    margin-bottom:10px;
+}
+.contact form{
+    display: flex;
+    justify-content:space-around;
+    margin-bottom:20px;
+}
+.contact form input[type = 'text']{
+    margin-right:15px;
+}
+
+.contact input[type = 'message']{
+    margin-bottom:20px;
+}
+
+.contact .submit{
+    position: relative;
+}
+.contact button{
+    position:absolute;
+    right: 0;
+}
+/* Contact */
+
+/* ----------------------------------------------------------------------- */
+
+/* Map */
+.map{
+    background-image:url('../Images/map.jpg');
+    background-size:cover;
+    min-height:100vh;
+    opacity: 80%;
+}
+/* Map */
+
+/* Footer */
+.footer{
+    text-align: center;
+    padding:100px;
+}
+.footer .links{
+    font-size:20px;
+    margin-bottom:20px;
+}
+.footer .links i{
+    margin:0px 3px;
+    color:#9F9F9F;
+}
+
+.footer .copyrights{
+    font-size:30px;
+    font-weight:bold;
+    letter-spacing: 2.5px;
+}
+
+.footer .copyrights::selection{
+    display: none;
+}
+.footer .copyrights:hover{
+    cursor:not-allowed
+}
+
+.footer .copyrights i{
+    color:black;
+}
+/* Footer */
